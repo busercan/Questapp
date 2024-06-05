@@ -30,7 +30,7 @@ public class Comment {
 	Post post;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name="user_id", nullable=false)
+	@JoinColumn(name="users_id", nullable=false)
 	@OnDelete(action  = OnDeleteAction.CASCADE)
 	@JsonIgnore
 	Users users;

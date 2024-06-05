@@ -8,6 +8,6 @@ import com.project.questapp.entities.Post;
 
 public interface PostRepository extends JpaRepository<Post, Long> {
 
-	List<Post> findByUserId(Long userId);
+	List<Post> findByUsersId(Long userId);
 
 }
